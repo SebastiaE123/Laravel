@@ -125,6 +125,7 @@
                 <th>Código</th>
                 <th>Nombre</th>
                 <th>Correo</th>
+                <th>Sexo</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -134,6 +135,7 @@
                 <td>{{ $usuario->codigo }}</td>
                 <td>{{ $usuario->nombre }}</td>
                 <td>{{ $usuario->correo }}</td>
+                <td>{{ $usuario->sexo }}</td>
                 <td class="actions">
                     <a href="{{ route('usuarios.edit', $usuario) }}" class="button-edit">Editar</a>
                     <form action="{{ route('usuarios.destroy', $usuario) }}" method="POST" class="form-delete">

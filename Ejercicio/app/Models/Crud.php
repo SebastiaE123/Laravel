@@ -28,6 +28,7 @@ class crud extends Model
     protected $fillable = [
         'codigo',
         'nombre',
-        'correo'
+        'correo',
+        'sexo'
     ];
 }

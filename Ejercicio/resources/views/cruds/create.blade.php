@@ -125,6 +125,9 @@
         <label for="correo">Correo:</label>
         <input type="email" id="correo" name="correo" placeholder="Correo" required>
 
+        <label for="sexo">Correo:</label>
+        <input type="text" id="sexo" name="sexo" placeholder="Sexo" required>
+
         <div class="button-container">
             <a href="{{ route('usuarios.index') }}" class="form-button back-button">Atrás</a>
             <button type="submit" class="form-button save-button">Guardar</button>

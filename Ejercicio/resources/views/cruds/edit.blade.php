@@ -105,6 +105,9 @@
             
             <label for="correo">Correo:</label>
             <input type="email" id="correo" name="correo" value="{{ $usuario->correo }}" required>
+
+            <label for="sexo">Sexo:</label>
+            <input type="text" id="sexo" name="sexo" value="{{ $usuario->sexo }}" required>
             
             <button type="submit">Actualizar</button>
         </form>
