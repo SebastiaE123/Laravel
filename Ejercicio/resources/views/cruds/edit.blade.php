@@ -107,7 +107,13 @@
             <input type="email" id="correo" name="correo" value="{{ $usuario->correo }}" required>
 
             <label for="sexo">Sexo:</label>
-            <input type="text" id="sexo" name="sexo" value="{{ $usuario->sexo }}" required>
+<select id="sexo" name="sexo" required>
+    <option value="">-- Selecciona --</option>
+    <option value="hombre" {{ $usuario->sexo == 'hombre' ? 'selected' : '' }}>Hombre</option>
+    <option value="mujer" {{ $usuario->sexo == 'mujer' ? 'selected' : '' }}>Mujer</option>
+    <option value="otro" {{ $usuario->sexo == 'otro' ? 'selected' : '' }}>Otro</option>
+</select>
+
             
             <button type="submit">Actualizar</button>
         </form>

@@ -125,8 +125,14 @@
         <label for="correo">Correo:</label>
         <input type="email" id="correo" name="correo" placeholder="Correo" required>
 
-        <label for="sexo">Correo:</label>
-        <input type="text" id="sexo" name="sexo" placeholder="Sexo" required>
+        <label for="sexo">Sexo:</label>
+<select id="sexo" name="sexo" required>
+    <option value="">-- Selecciona --</option>
+    <option value="hombre" {{ old('sexo') == 'hombre' ? 'selected' : '' }}>Hombre</option>
+    <option value="mujer" {{ old('sexo') == 'mujer' ? 'selected' : '' }}>Mujer</option>
+    <option value="otro" {{ old('sexo') == 'otro' ? 'selected' : '' }}>Otro</option>
+</select>
+
 
         <div class="button-container">
             <a href="{{ route('usuarios.index') }}" class="form-button back-button">Atrás</a>
